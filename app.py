@@ -1,4 +1,6 @@
 # Prototype Design Pattern Shapes Example
+# @author: Juan D. Londoño
+
 from copy import deepcopy
 from circle import Circle
 from square import Square
@@ -8,14 +10,20 @@ class Application:
     shapes = []
     def __init__(self):
         self.shape = None
+
         circle = Circle(10)
         redCircle = ColoredShape(circle, "red")
+
         anotherRedCircle = redCircle.clone()
+
         self.addShape(redCircle)
         self.addShape(anotherRedCircle)
+
         square = Square(10)
         blueSquare = ColoredShape(square, "blue")
+
         anotherBlueSquare = blueSquare.clone()
+
         self.addShape(blueSquare)
         self.addShape(anotherBlueSquare)
 

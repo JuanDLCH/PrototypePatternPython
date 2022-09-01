@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+# Abstract Base Classes (ABC) are a way to define interfaces that can be implemented by other classes.
 class Shape(ABC):
 
     @abstractmethod
